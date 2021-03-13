@@ -1,0 +1,255 @@
+@font-face {
+    /* Nous avons dû laisser en ttf parce que le format woff créait une erreur de chargement de police. */
+    font-family: 'Romantica';
+    src: url('medias/font/Romantica-RpXpW.ttf');
+  }
+
+  @font-face {
+  font-family: 'Made';
+    src: url('medias/font/MADE-Soulmaze-Outline-Italicwoff.woff');
+  }
+
+  @font-face {
+  font-family: 'Made fill';
+    src: url('medias/font/MADE-Soulmaze-Italic.woff');
+  }
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    font-size: 4vw;
+    font-weight: 800;
+    padding: 0;
+    margin-top: 7.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins';
+
+}
+
+section {
+    height: 100vh;
+}
+
+section:nth-child(1){
+    cursor: url('medias/img/purple.png'), pointer;
+}
+
+section:nth-child(2){
+    cursor: url('medias/img/orange.png'), pointer;
+}
+
+.pseudo{
+    font-size: 1.5vw;
+    color: #82828d;
+}
+.pseudo.purple{
+    position: absolute;
+    top: 22vh;
+    left: 30vw;
+
+}
+
+.pseudo.orange{
+    position: absolute;
+    top: 102vh;
+    right: 20vw;
+
+}
+
+.object {
+    position: absolute;
+    height: 40vh;
+    width: 40vw;
+    left: 50%;
+    
+}
+
+.object.purple {
+    top: 20vh;
+    right: 10vw;
+    float: right;
+}
+
+.object.orange {
+    top: 100vh;
+    left: 10vw;
+}
+
+
+svg{
+    position: absolute;
+}
+
+.purple svg{
+    right: 0;
+}
+
+
+.bulle {
+    position: absolute;
+    max-width: 30vw;
+}
+
+.bulle.purple{
+    left: 10vw;
+    top: 30vh;
+
+    background: #ded1eb;
+    border-radius: 50px 50px 5px 50px;
+    transition: .25s;
+}
+
+.bulle.purple:hover{
+    background: #5A189A;
+}
+
+.bulle.purple:hover > p{
+    color: white;
+}
+
+.bulle.purple:hover > p span{
+    color: #AD8CCD;
+}
+
+.bulle.orange:hover{
+    background: #FF9E00;
+}
+
+.bulle.orange:hover > p{
+    color: white;
+}
+
+.bulle.orange:hover > p span{
+    color: #FFCF80;
+}
+
+.bulle.orange{
+    right: 10vw;
+    top: 110vh;
+    background: #ffeccc;
+    border-radius: 50px 50px 50px 5px;
+    transition: .25s;
+}
+
+.bulle.purple p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    text-align: left;
+    color: black;
+    margin: 0;
+    padding: 7.5%;
+    transition: .25s;
+}
+
+.bulle.purple p span {
+    color: #5A189A;;
+}
+
+.bulle.orange p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    text-align: left;
+    color: black;
+    margin: 0;
+    padding: 7.5%;
+    transition: .25s;
+}
+
+.bulle.orange p span {
+    color:#FF9E00;
+}
+
+.particles {
+    position: absolute;
+    width: 60vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#purple{
+    -webkit-mask-box-image:
+    -webkit-radial-gradient(white, transparent 60%);
+}
+#orange{
+    -webkit-mask-box-image:
+    -webkit-radial-gradient(white, transparent 60%);
+}
+
+
+.particles.purple {
+    top: 60vh;
+    left: 5vw;
+}
+
+.particles.orange {
+    top: 140vh;
+    right: 5vw;
+}
+
+.particles.purple p{
+    position: absolute;
+    font-size: 10vw;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Romantica';
+    color: #5A189A;
+}
+
+.particles.orange p{
+    position: absolute;
+    font-size: 4.25vw;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Made';
+    color: #FF9E00;
+}
+
+lottie-player.purple{
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    right: 10vw;
+    top: 10vh;
+}
+
+lottie-player.orange{
+    position: absolute;
+    width: 40vw;
+    height: 40vw;    
+    left: 9.5vw;
+    top: 100vh;
+}
+
+
+.button{
+    cursor: url('medias/img/cursor.png'), pointer;
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    background-color: #4083ff;
+    padding: 2vh 2vw;
+    color: white;
+    font-size: 2vw;
+    border-radius: 50px 50px 5px 50px;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.button:hover{
+    background-color: #0057FF;
+    transform: scale(1.25);
+}
